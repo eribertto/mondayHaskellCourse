@@ -1,0 +1,5 @@
+Lecture2/*.hi
+Lecture2/*.o
+Lecture2/HelloWorld
+Lecture2/artifacts
+!Lecture2/artifacts/.marker
