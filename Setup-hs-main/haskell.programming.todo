@@ -1,0 +1,192 @@
+
+--
+Haskell naming requirements FP 4 Haskell First steps:
+    https://youtu.be/YtZIKujkSmU?t=1549
+--
+Consider signing up to this latest course:
+    https://academy.mondaymorninghaskell.com/courses/setup-hs/lectures/45886261
+    ✔ Register to Teachable, see google keep for details @done(23-04-03 19:38)
+    ✔ 01 - Introduction & GHCup @done(23-04-03 19:32)
+    ✔ 02 - GHC & Compilation @done(23-04-03 19:44)
+
+--
+Signin to Haskell discord channel using Github erimendz account:
+    https://discourse.haskell.org/top?period=monthly
+
+Register to Skillsmatter using Github erimendz account:
+    https://www.skillsmatter.com/#showModal?modal-signup-complete
+
+✔ todo: configure vim to use HlS: @done(23-03-31 18:10)
+    https://haskell-language-server.readthedocs.io/en/stable/configuration.html#configuring-your-editor
+Update ghc to 9.6.1 using ghcup install
+Update cabal to 3.10.1.0 using ghcup install
+Install hls 1.10.0.0 using ghcup install
+
+Read books tracking:
+    1. Programming in Haskell by Graham Hutton
+    2. Learn You a Haskell for Great Good 
+--
+Haskell eXchange 2022: Novice Track:
+	https://www.youtube.com/playlist?list=PLIpl4GKFQR6dZKCoIb59b7v2AMb6yj4gd
+	✔ An Introduction to Haskell (Andres Löh) @done(23-03-31 04:57)
+	☐ Looping Through Functional Loops (Marco Perone)
+	☐ Super-heroes: Monoid, Foldable and Traversable (Paweł Szulc)
+	☐ Haskell in WebAssembly (Shivay Lamba)
+	☐ Haskell Cat: A Command Line Tool Workshop (Rebecca Skinner)
+
+todo: finish viewing these vids:
+	✔ FP_1_-_Course_Overview_[a0fPHkzK36I].webm @done(23-03-31 04:57)
+	✔ FP_2_-_Haskell_Demo_[dAeECyntQJg].webm @done(23-03-31 04:58)
+	✔ FP_3_-_Introduction_[rIprO6zoujM].webm @done(23-03-31 11:52)
+	✔ FP_4_-_First_Steps_[YtZIKujkSmU].webm @done(23-04-03 17:41)
+	☐ FP_5_-_Types_and_Classes_[uBEPFkuPrcU].webm
+	☐ FP_6_-_Defining_Functions_[89G5C4T8nW4].webm
+	☐ FP_7_-_List_Comprehensions_[xy5rciaS2ys].webm
+	☐ FP_8_-_Recursive_Functions_[WawJ8LArl54].webm
+	☐ FP_9_-_Exercises_On_Recursion_[I9S61BYM9_4].webm
+	☐ FP_10_-_Higher-Order_Functions_[dUPWjM63THs].webm
+	☐ FP_11_-_How_To_Think_Recursively_[n6bg8L91Qew].webm
+	☐ FP_12_-_Declaring_Types_and_Classes_[sYgvpTyFpZ4].webm
+	☐ FP_13_-_The_Countdown_Problem_[CiXDS3bBBUo].webm
+	☐ FP_14_-_Interactive_Programming_[wPbO-uP6adM].webm
+	☐ FP_15_-_Exercises_On_Interaction_[QqyEr33v5Zk].webm
+	☐ FP_16_-_Lazy_Evaluation_[R1uBhRK2AKI].webm
+
+--
+Gitpod workspaces:
+	https://gitpod.io/workspaces
+Add canvas account for the Haskell course:
+	https://iohk.instructure.com/courses/141
+More Haskell tutorial link:
+	https://wiki.haskell.org/Category:Tutorials
+
+--
+Update: Installed ghcup haskell toolkit in Freebsd box
+
+--
+Today in Fedora machine follow the guide to install ghcup for haskell:
+	https://www.haskell.org/ghcup/install/
+	✔ installed the system requirements for Fedora @done(23-03-23 05:09)
+	✔ followed the prompts during installation @done(23-03-23 05:15)
+
+--
+Haskell ghci REPL is working and can work on variables, expressions in the repl. Links:
+	http://learnyouahaskell.com/starting-out
+		stopped at succ function
+	https://www.seas.upenn.edu/~cis1940/spring13/lectures/01-intro.html
+	https://book.realworldhaskell.org/read/
+
+
+--
+✔ Installed Haskell and friends following this guide: @done(23-03-21 17:39)
+	https://github.com/haskell-beginners-2022/exercises
+	See output below:
+		# ghcup whereis ghc
+		/home/eribertto/.ghcup/ghc/9.2.5/bin/ghc
+		# ghcup whereis cabal
+		/home/eribertto/.ghcup/bin/cabal-3.6.2.0
+	✔ Need to add to $PATH the above folders. @done(23-03-21 17:39)
+
+
+		```
+
+
+
+Haskell code examples:
+    https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/Simple%20examples
+--
+Stopped at section Accessing List Elements from the book Learn you a Haskell
+✔ Resume to lists inside lists: @done(23-03-28 19:54)
+    ✔ lists within a list can be of diff lengths but they must be of the same type else will be error @done(23-03-28 19:55)
+    ✔ list comparison are done in lexicographical order e.g. list heads are compared, followed by items of each list til comparison is completed @done(23-03-28 19:56)
+    ✔ list comparison returns a Boolean @done(23-03-28 19:56)
+    ✔ any nonempty list is always greater than an empty list @done(23-03-28 19:57)
+    Various functions applicable to ranges of list:
+        head - takes a list and returns its head or elem1 (index 0)
+        tail - takes a list and returns its tail iow it chops off the head lol
+        last - returns the last elem of the list
+        init - takes a list and returns everything except the last
+        NB: when using the above functions be very careful not to use them on empty lists since this error cannot be caught at compile time.
+        length - takes a list and returns its length
+        null - checks if the list is empty or not, Boolean
+        reverse - reverses a list
+        take - takes a number and a list as arguments and extracts the specified number elements from the beginning of the list
+        drop - drops (at most) the specified number of elements from the start of the list
+        maximum - takes a list and returns the largest element
+        minimum - returns the smallest element
+        sum - takes a number list and return their sum
+        product - returns the product of the elements of a list
+        elem - takes an item and a list and returns a boolean if the item is in the list
+        cycle - takes a list and replicates its elements indefinitely to form an infinite list, beware: to use this make sure to slice it off somewhere
+        repeat - takes an element and produces an infinite list of just that element
+        replicate - is an easier way to create a list composed of a single item. the first arg is the number of elements, the second arg is the data type of that list e.g. replicate 3 10 ---> [10,10,10]
+        one final note about ranges:
+            watch out when using them with floating-point numbers, some will yield funky results!
+        NB:
+            next session resume to I'm a List Comprehension
+
+
+--
+Add canvas account:
+    https://iohk.instructure.com/courses/141
+--
+Begin tracking exercises from the book Learn You a Haskell for Great Good A Beginner's Guide:
+    Chapter 1:
+        ✔ baby.hs the function doubleSmallNumber is good NOT buggy @done(23-03-24 09:40)
+        ☐ next session resume to 'An Intro to Lists'
+
+Haskell Course 2022 playlist:
+    https://www.youtube.com/playlist?list=PLVx52dsZiXBlbFMecmUAprXcZdXgKR1-8
+    Course repo https://github.com/input-output-hk/haskell-course @done(23-03-24 09:52)
+    ✔ Haskell Course - Lesson 1 - Intro to Haskell and tools @done(23-03-25 21:58)
+        use double dash -- for in line comment
+        use opening/closing {-- for multiline comments
+        Haskell is indentation sensitive meaning spaces, tabs and newlines matter (setup your editor to follow this convention)
+        function names cannot begin with uppercase
+        func parameters are separated by spaces
+        everything after the = is the func's body
+        parens is use to prioritize calculations just like in math, think PEMDAS e.g. Parens Exponents, Multiplication, Division, Addition, Subtraction or please excuse my dear aunt sally :-)
+        Haskell Type system or type checking:
+            Type checking is the process of verifying and enforcing the constraints of data types e.g. each type has its own limitations so you can't do math with letters and the compiler ghc and friends makes sure this is implemented and respected in the code.
+        Dynamic-typed languages check the types at run-time meaning when run like Javascript, Python, ObjectiveC, Rust? etc
+        Static-types languages check the types at compile time examples are C, C++, Haskell, 
+        See this for reference:
+            https://www.baeldung.com/cs/statically-vs-dynamically-typed-languages
+        In Haskell every expression has a type but thankfully you dont need to do them manually.
+        Haskell's interpreter is very good in doing type inference e.g. infer the types on its own
+        This allows the compiler to comprehend and reason quite a lot about your program, providing you with a pretty effective bug-catching assistant.
+        Haskell is lazy meaning it won't evaluate expressions until their results are needed.
+        Cabal and Stack:
+            Both are systems for managing libraries and programs. They make it extremely easy to work with libraries
+            In this course Cabal is the system to use and it will be explained in the later part of this course.
+        GHC and GHCi:
+            GHC aka Glasglow Haskell Compiler is a compiler and interactive environment for Haskell. Using GHC we can compile programs and execute them lik any other app.
+            Evaluate expressions on the fly using the interactive environment GHCi
+            Inside the ghci you can load the haskell file by typing :l <haskell-file>
+        Register to canvas learning portal:
+            login => erimendz at gmail
+            passawd => NJI900))poi**
+            https://iohk.instructure.com
+            Use this login to track the course (or in Youtube if you dont want it here)
+        Note the course repo is forked to my account:
+            https://github.com/eribertto/haskell-course
+        Added gitpod browser extension for Vivaldi:
+            https://www.gitpod.io/extension-activation
+        Howto Gitpod and SSH vscode:
+            https://www.gitpod.io/blog/vscode-desktop-ssh-updates
+    
+    
+
+    ✔ Intro to the Haskell Course @done(23-03-24 19:44)
+    ✔ Haskell Course - Lesson 2 - Data types, Signatures, and Polymorphism @done(23-03-24 19:44)
+            ✔ Note: review the course slides and do hands-on coding @done(23-03-25 21:58)
+    ✔ Haskell Course - Lesson 3 - Conditional & Helper Constructions @done(23-03-24 19:44)
+            ☐ Note: review the course slides
+    ☐ Haskell Course - Lesson 4 - Pattern Matching and Case expressions
+    ☐ Haskell Course - Lesson 5 - Improving and combining functions
+    ☐ Haskell Course - Lesson 6 - Recursion and Folds
+    ☐ Haskell Course - Lesson 7 - Intro to Type Classes
+    ☐ Haskell Course - Lesson 8 - Creating Non-Parameterized Types
+    ☐ Haskell Course - Lesson 9 - Creating Parameterized and Recursive Types
+    ☐ Haskell Course - Lesson 10 - Creating Type Classes and Instances
+    ☐ Haskell Course - Lesson 11 - Basic IO
