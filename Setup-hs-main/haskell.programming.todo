@@ -8,6 +8,11 @@ Consider signing up to this latest course:
     ✔ Register to Teachable, see google keep for details @done(23-04-03 19:38)
     ✔ 01 - Introduction & GHCup @done(23-04-03 19:32)
     ✔ 02 - GHC & Compilation @done(23-04-03 19:44)
+        Learned:
+            how to run cli commands runghc <file>, ghc <file>, ghc and parameters to store artifacts in different locations
+            edit *.hs files and import module names, namespacing modules based on folder locations
+            reference guide file:
+            file:///home/erimendz/coding/mondayHaskellCourse/Setup.hs_Exercises.pdf
 
 --
 Signin to Haskell discord channel using Github erimendz account:
