@@ -13,8 +13,14 @@ Consider signing up to this latest course:
             edit *.hs files and import module names, namespacing modules based on folder locations
             reference guide file:
             file:///home/erimendz/coding/mondayHaskellCourse/Setup.hs_Exercises.pdf
-    ☐ 03 - Stack & Cabal
+    ✔ 03 - Stack & Cabal @done(23-04-07 09:38)
     https://academy.mondaymorninghaskell.com/courses/setup-hs/lectures/45886268
+        Learned:
+            ✔ how to run the command stack build @done(23-04-07 09:39)
+            ✔ that in the generated stack.yaml file you can change the resolver version by checking Hackage.org repo @done(23-04-07 09:41)
+            ✔ that when you modify a file inside the project you have to redo the command stack rebuild to see the changes @done(23-04-07 09:42)
+            ✔ that you can you create a new cabal project with `stack new projectX`, cd to that project folder then calling stack build, stack exec projectX-exe @done(23-04-07 09:44)
+    ☐ 04 - The Cabal File & Executables
 
 --
 Signin to Haskell discord channel using Github erimendz account:
